@@ -1,0 +1,10 @@
+{
+  "dns": ["8.8.8.8", "8.8.4.4", "1.1.1.1"],
+  "registry-mirrors": [
+    "https://docker.mirrors.ustc.edu.cn",
+    "https://hub-mirror.c.163.com"
+  ],
+  "insecure-registries": [],
+  "debug": false,
+  "experimental": false
+}

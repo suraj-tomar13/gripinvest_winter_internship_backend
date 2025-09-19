@@ -45,6 +45,18 @@ export const investments = {
         });
         return handleResponse(response);
     },
+
+    invest: async (token, investmentData) => {
+        const response = await fetch(`${API_BASE_URL}/investments`, {
+            method: 'POST',
+            headers: { 
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}` 
+            },
+            body: JSON.stringify(investmentData),
+        });
+        return handleResponse(response);
+    },
 };
 
 export const transactions = {
